@@ -1,0 +1,109 @@
+uthor:  Dustin Daily
+
+Program: Assignment 2
+
+Date:    2/16/2016
+
+
+
+BUILDING THE PROGRAM
+
+   This program was written in C++ and distributed to be built on a 
+
+   Linux system.  To build the program, type 'make' to create the 
+
+   executable called 'prog2'
+
+
+
+RUNNING THE PROGRAM
+
+   Type 'prog2' at the command prompt after building the program.
+
+
+
+PROGRAM DESCRIPTION
+
+   This program will read dates, then output them on the screen. 
+
+
+
+PROGRAM INPUT
+
+   No program input
+
+   
+
+PROGRAM OUTPUT
+
+   All output is written to the screen. 
+
+
+
+
+
+PROGRAM DESIGN
+
+   This program assigns Date class objects and uses arithmatic operators as well as exceptions
+
+
+
+
+
+FILE INDEX
+
+   file             function(s)        		description
+
+   --------------   -----------------  		----------------------
+
+   
+
+   main.cpp         main               		calls all other functions
+
+
+
+  date.cpp	    Date Constructor		Assigns a date or takes todays date
+
+		    Arthmatic Operators		Allows for basic math with dates
+
+		    Outstream			Allows for output to the screen
+
+  
+
+  date.h	   Date Class 			Initalize the methods 	
+
+		   DateNameSpace Namespace	and variables in the namespace
+
+
+
+   makefile              	                builds executable
+
+
+
+   README                    	                this file
+
+
+
+
+
+PROGRAM TESTING
+
+   This program was tested with different sets of data.  
+
+  
+
+  Checked arithamtic operators
+
+  
+
+  Checked format for output
+
+
+
+  I was unable to get the last 25% working efficently
+
+  
+
+Any further errors should be reported to:
+
+   dailydu@mnstate.edu

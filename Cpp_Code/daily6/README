@@ -1,0 +1,101 @@
+
+r:  Dustin Daily
+
+Program: Assignment 6
+
+Date:    4/10/2016
+
+
+
+BUILDING THE PROGRAM
+
+   This program was written in C++ and distributed to be built on a 
+
+   Linux system.  To build the program, type 'make' to create the 
+
+   executable called 'prog6'
+
+
+
+RUNNING THE PROGRAM
+
+   Type 'prog6' at the command prompt after building the program.
+
+
+
+PROGRAM DESCRIPTION
+
+   This program will create an SortedList object and allow for population and order change.
+
+
+
+PROGRAM INPUT
+
+   No program input
+
+   
+
+PROGRAM OUTPUT
+
+   All output is written to the screen. 
+
+
+
+
+
+PROGRAM DESIGN
+
+   This program creates SortedList class objects.
+   The SortedList can be populated with any type.
+
+
+
+
+
+FILE INDEX
+
+   file             function(s)        		description
+
+   --------------   -----------------  		----------------------
+
+   
+
+   main.cpp         main               		calls all other functions
+
+
+
+  sortedlist.h	SortedList Constructors		Creates the SortedList
+
+				insert methods				Inserts values into the list
+				
+				Deletion methods			Deletes the inserted elements
+				
+				traverse methods			Displays the information in the list 
+											by taking in a pointer to function
+				
+				status methods				returns information about the list 
+											(number of elements, if element is in list)
+								
+				list alter methods			Moves the itorator through the list
+											(next, prev, current, reset)
+
+
+   makefile 								builds executable
+
+
+
+   README									this file
+
+
+
+
+
+PROGRAM TESTING
+
+	This program was tested with different sets of data.  
+
+
+Any further errors should be reported to:
+
+   dailydu@mnstate.edu
+

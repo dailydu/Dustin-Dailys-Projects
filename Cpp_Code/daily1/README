@@ -1,0 +1,58 @@
+File:    README
+Author:  Dustin Daily
+Program: Assignment 1
+Date:    04/04/2015
+
+BUILDING THE PROGRAM
+   This program was written in C++ and distributed to be built on a 
+   Linux system.  To build the program, type 'make' to create the 
+   executable called 'prog1'
+
+RUNNING THE PROGRAM
+   Type 'prog1' at the command prompt after building the program.
+
+PROGRAM DESCRIPTION
+   This program will read ints and strings from the file people then sort
+   them decendingly, then output them on the screen. 
+
+PROGRAM INPUT
+   No program input
+   
+PROGRAM OUTPUT
+   All output is written to the screen. 
+
+
+PROGRAM DESIGN
+   This program assigns Currency class objects and uses arithmatic and relational operators
+
+
+FILE INDEX
+   file             function(s)        description
+   --------------   -----------------  ----------------------
+   
+   main.cpp         main               calls all other functions
+
+  currency.cpp	    Currency Constructor	Assigns a double to an object
+		    Relational Operators	Allows for object comparisons
+		    Arthmatic Operators		Allows for basic math with objects
+		    Outstream			Allows for output to the screen
+  
+  Currency.h	   Currency Class 	Initalize the methods 	
+					and variables
+
+   makefile                            builds executable
+
+   README                              this file
+
+
+PROGRAM TESTING
+   This program was tested with different sets of data.  
+
+  Checked relational operators
+  
+  Checked arithamtic operators
+  
+  Checked format for output
+
+   There are no known bugs.  Any errors should be reported to:
+   dailydu@mnstate.edu
