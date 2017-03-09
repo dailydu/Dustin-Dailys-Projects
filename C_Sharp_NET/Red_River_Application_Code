@@ -1,0 +1,79 @@
+using System;
+using System.Collections.Generic;
+using System.Windows.Forms;
+using System.Linq;
+
+namespace Dustin_Daily_Application_3_7_17
+{
+    public partial class Form1 : Form
+    {
+
+        public Form1()
+        {
+            InitializeComponent();
+
+        }
+        /// <summary>
+        /// This button press fuction handles the seperation of each words from the text file and displays them on the textDisplay box
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string text = System.IO.File.ReadAllText(@"C:\Users\Admin\Desktop\Programming Interview Assignment\Blurb.txt");
+
+            //These arrays shows the characters that are split in the paragraph given in the text file
+            char[] delimiterChars = { ' ', ',', '.', '\t' };
+            char[] sentenceChars = { '.', '!', '?' };
+
+            //These arrays hold the words and sentences from the text file. 
+            //The words are all converted to lowercase for case sensative words.
+            string[] words = text.ToLower().Split(delimiterChars, StringSplitOptions.RemoveEmptyEntries);
+            string[] sentences = text.Split(sentenceChars, StringSplitOptions.RemoveEmptyEntries);
+            
+            //This Dictionary class acts like a 2D array that can store different types of values.
+            Dictionary<string, int> dictionaryValues = new Dictionary<string, int>();
+
+            //This displays the amount of words and sentences. This also provides information about the word occurrences.
+            this.textDisplay.Text += "Sentences in text file: " + sentences.Length + "\r\n";
+            this.textDisplay.Text += "Words in text file: " + words.Length + "\r\n";
+            this.textDisplay.Text += "Occurrences of each word sorted by most common:";
+            this.textDisplay.Text += "\r\n_____________________________________\r\n";
+
+
+            //This loop go through all the words in the array and if it has already been found then 
+            //it will increment the value associated with that word. 
+            foreach (string i in words)
+            {
+
+                if (dictionaryValues.ContainsKey(i))
+                {
+                    dictionaryValues[i]++;
+                }
+                else
+                {
+                    dictionaryValues.Add(i, 1);
+                }
+  
+            }
+
+            //This puts the values in the dictionary in descending order to see which word occurs the most.
+            var items = from pair in dictionaryValues
+                        orderby pair.Value descending
+                        select pair;
+
+            //This loop prints out each element in the dictionary.
+            foreach (KeyValuePair<string, int> kvp in items)
+            {
+                textDisplay.Text += string.Format("{0} - {1} \r\n", kvp.Key, kvp.Value);
+                
+;            }
+
+        }
+
+        public object[] text { get; set; }
+
+    }
+
+    
+}
